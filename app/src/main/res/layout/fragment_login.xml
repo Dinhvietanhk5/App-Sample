@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_logo_login" />
+
+        <TextView
+            style="@style/TextGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="39dp"
+            android:layout_marginTop="59dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/ic_phone" />
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white_blue"
+                android:hint="@string/nhap_sdt"
+                android:imeOptions="actionNext"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="12dp"
+                android:textColor="@color/color_text"
+                android:textColorHint="@color/color_text"
+                android:textSize="16sp"
+                app:inputType="money" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="39dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="39dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/ic_pass" />
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/gray_text_color"
+                android:imeOptions="actionNext"
+                android:textColor="@color/color_text"
+                android:textColorHint="@color/color_text"
+                android:textSize="16sp"
+                app:inputType="pass" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="39dp"
+            android:background="@color/blue" />
+
+        <TextView
+            android:id="@+id/btnForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="39dp"
+            android:paddingVertical="10dp"
+            android:text="Quên mật khẩu" />
+
+        <carbon.widget.TextView
+            android:id="@+id/btnLogin"
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/dang_nhap"
+            app:carbon_cornerRadius="20dp"
+            app:carbon_elevation="5dp"
+            app:carbon_elevationShadowColor="@color/shadow"
+            app:carbon_rippleColor="@color/transparent_click"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <carbon.widget.TextView
+            android:id="@+id/btnSigin"
+            style="@style/TextBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shape_white_line_blue_rd500"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_24dp"
+            android:paddingVertical="10dp"
+            android:text="Tạo tài khoản"
+            app:carbon_cornerRadius="20dp"
+            app:carbon_elevation="5dp"
+            app:carbon_elevationShadowColor="@color/shadow"
+            app:carbon_rippleColor="@color/transparent_click"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

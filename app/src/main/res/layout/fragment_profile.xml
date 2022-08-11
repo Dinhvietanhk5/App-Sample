@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include5"
+            layout="@layout/view_top_home" />
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24dp"
+            android:layout_marginTop="@dimen/_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include5">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAvata"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                app:placeholderImage="@drawable/ic_user"
+                app:roundAsCircle="true"
+                tools:ignore="MissingClass,MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:text="User"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/TextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/viewCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/lbRefferalCode"
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Mã giới thiệu:"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tvRefferalCode"
+                        style="@style/TextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/btnCopyRef"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="match_parent"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_copy_ref_code" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+
+            <carbon.widget.TextView
+                android:id="@+id/btnProfile"
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_white_line_blue_rd500"
+                android:drawableStart="@drawable/ic_profile"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_24dp"
+                android:paddingVertical="12dp"
+                android:text="@string/thay_doi_thong_tin"
+                app:carbon_cornerRadius="500dp"
+                app:carbon_elevationShadowColor="@color/shadow"
+                app:carbon_rippleColor="@color/white" />
+
+            <carbon.widget.TextView
+                android:id="@+id/btnChangePass"
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_white_line_blue_rd500"
+                android:drawableStart="@drawable/ic_key"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_24dp"
+                android:paddingVertical="12dp"
+                android:text="@string/thay_doi_pass"
+                app:carbon_cornerRadius="500dp"
+                app:carbon_elevationShadowColor="@color/shadow"
+                app:carbon_rippleColor="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <carbon.widget.TextView
+                    android:id="@+id/btnOrder"
+                    style="@style/TextGreen3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:background="@drawable/shape_white_line_blue_rd500"
+                    android:drawableStart="@drawable/ic_shopping_cart"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_24dp"
+                    android:paddingVertical="12dp"
+                    android:text="@string/don_hang"
+                    app:carbon_cornerRadius="500dp"
+                    app:carbon_elevationShadowColor="@color/shadow"
+                    app:carbon_rippleColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_ellipse"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:layout_marginEnd="@dimen/_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/btnOrder"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.533" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <carbon.widget.TextView
+                android:id="@+id/btnLogout"
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/shape_white_line_blue_rd500"
+                android:drawableStart="@drawable/ic_logout"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_24dp"
+                android:paddingVertical="12dp"
+                android:text="@string/dang_xuat"
+                app:carbon_cornerRadius="500dp"
+                app:carbon_elevationShadowColor="@color/shadow"
+                app:carbon_rippleColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: tk.zielony:carbon:0.17.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a3a86676cad503052ae0823f6e353a5a/transformed/jetified-carbon-0.17.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a3a86676cad503052ae0823f6e353a5a/transformed/jetified-carbon-0.17.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a3a86676cad503052ae0823f6e353a5a/transformed/jetified-carbon-0.17.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tk.zielony/carbon/0.17.0/1fb51d7795329b60ffbb3a7ae44884a137741fb3/carbon-0.17.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

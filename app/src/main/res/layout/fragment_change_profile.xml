@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ChangeProfileFragment">
+
+    <include layout="@layout/view_top_home" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAvata"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholderImage="@drawable/ic_user"
+                app:roundAsCircle="true" />
+
+            <carbon.widget.TextView
+                android:id="@+id/btnChangeAvatar"
+                style="@style/TextGreen3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/shape_white_line_blue_rd500"
+                android:gravity="center"
+                android:paddingHorizontal="23dp"
+                android:paddingVertical="8dp"
+                android:text="@string/thay_doi_avatar"
+                app:carbon_cornerRadius="500dp"
+                app:carbon_elevationShadowColor="@color/shadow"
+                app:carbon_rippleColor="@color/white" />
+
+            <TextView
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:text="@string/ho_va_ten" />
+
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_line_blue_rd5"
+                android:hint="@string/nhan_ten_su_dung"
+                android:textColor="@color/white_blue"
+                android:textColorHint="@color/color_text"
+                android:textSize="14sp"
+                app:inputType="textEmpty" />
+
+            <TextView
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:text="@string/sdt"
+                tools:ignore="HardcodedText" />
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_line_blue_rd5"
+                android:hint="@string/nhap_so_dien_thoai"
+                android:textColor="@color/white_blue"
+                android:textColorHint="@color/color_text"
+                android:textSize="14sp"
+                app:inputType="phone" />
+
+            <TextView
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:text="Email"
+                tools:ignore="HardcodedText" />
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_line_blue_rd5"
+                android:hint="@string/nhap_email"
+                android:textColor="@color/white_blue"
+                android:textColorHint="@color/color_text"
+                android:textSize="14sp"
+                app:inputType="email" />
+
+            <TextView
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:text="@string/nhap_dia_chi" />
+
+            <com.newsoft.nscustomview.edittext.NSEdittext
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_line_blue_rd5"
+                android:textColor="@color/white_blue"
+                android:textColorHint="@color/color_text"
+                android:textSize="14sp"
+                app:inputType="textEmpty" />
+
+            <carbon.widget.TextView
+                android:id="@+id/btnSave"
+                style="@style/TextGreen3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_60dp"
+                android:background="@drawable/shape_white_line_blue_rd5"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="@string/cap_nhat"
+                app:carbon_cornerRadius="5dp"
+                app:carbon_elevationShadowColor="@color/shadow"
+                app:carbon_rippleColor="@color/white" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
